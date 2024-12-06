@@ -53,7 +53,7 @@ svg.append("text")
     .text("Color - % Percentage of Sleep per Time Period");
 
 // 加载 CSV 文件并绘制 heatmap
-d3.csv('sleep_Data.csv').then(function(data) {
+d3.csv('Sleep_Data.csv').then(function(data) {
   var squareSize = Math.min(width / data.length, height / (data.columns.slice(1).length));
 
   var xScale = d3.scaleBand()
