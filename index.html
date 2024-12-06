@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sleepmatter</title>
+    <script src="d3.js"></script>
+    <style>
+        /* 页面背景渐变，设置为固定 */
+        body {
+            background: linear-gradient(to bottom, #A29FF9, #FBC6C2); /* 从上到下的渐变 */
+            opacity: 1; /* 确保透明度为 100% */
+            margin: 0; /* 去掉默认的边距 */
+            height: 100vh; /* 确保背景覆盖整个视口 */
+            display: flex; /* 使用Flexbox布局 */
+            flex-direction: column; /* 垂直排列页面 */
+            background-attachment: fixed; /* 背景固定 */
+            background-size: cover; /* 背景覆盖整个视口 */
+        }
+        /* 设置文本颜色为白色 */
+        h1, h2, bodycopy {
+            color: white; /* 设置文本颜色为白色 */
+        }
+        .page-content p {
+            font-size: 16px; /* 按需要调整文字大小 */
+        }
+
+        .page-content img {
+            max-width: 50%;
+            height: auto;
+        }
+        /* 页面内容的样式 */
+        .page {
+            flex: 1; /* 每个页面均分可用空间 */
+            min-height: 100vh; /* 确保每个页面至少占据一个视口的高度 */
+            display: flex; /* 使用Flexbox布局 */
+            flex-direction: column; /* 垂直排列内容 */
+            justify-content: center; /* 内容垂直居中 */
+            align-items: center; /* 内容水平居中 */
+            position: relative; /* 使得子元素绝对定位相对于该页面 */
+            background-color: rgba(0, 0, 0, 0); /* 设置页面背景为半透明，确保看到背景 */
+        }
+
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 6px;
+            background: white;
+            border: 1px solid white;
+            border-radius: 4px;
+            pointer-events: none;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="pages" style="margin-top: 0px; margin-bottom: 0px;">
+        <div id="R2815373546" page-url="main-text" class="page" style="--pin-padding-top: 0px; --pin-padding-bottom: 0px;">
+            <div class="backdrop">
+                <div class="backdrop-contents visible inside loaded" style="--backdrop-width: 1918px; --backdrop-height: 911px;">
+                    <div class="gradient"></div>
+                </div>
+            </div>
+            
+            <a id="main-text"></a>
+            <div class="page-layout">
+                <div class="page-content">
+                    <bodycopy style="--fit-height: 806.0528px; --resize-parent-width: 1813px;">
+                        <br><br>
+                        <column-set gutter="2rem" mobile-hide-empty="false" mobile-stack="true">
+                            <column-unit slot="0"></column-unit>
+                            <column-unit slot="1"></column-unit>
+                        </column-set>
+                        <h1>NIGHT NIGHT,</h1>
+                        <h2>ARCH STUDENT<br></h2>
+                        <br><br>
+                        Diary of Sleep Status vs. Time of Day<br>
+                        <br><br>
+                        Team:   Sleeptimesmatter<br>
+                        Members:Yihan Zheng, Wenyi Xu<br>
+                        <br><br>
+                        ↓<br>
+                    </bodycopy>
+                </div>
+            </div>
+        </div>
+
+        <!-- 新增的页面 -->
+<div id="R2815373547" page-url="new-page" class="page" style="--pin-padding-top: 0px; --pin-padding-bottom: 0px;">
+    <div class="backdrop">
+        <div class="backdrop-contents visible inside loaded" style="--backdrop-width: 1918px; --backdrop-height: 911px;">
+            <div class="gradient"></div>
+        </div>
+    </div>
+
+    <a id="new-page"></a>
+    <div class="page-layout">
+        <div class="page-content">
+            <bodycopy style="--fit-height: 806.0528px; --resize-parent-width: 1813px;">
+                <h1> </h1>
+                <h2> </h2>
+                <p>It’s well known that architecture students often appear disheveled and utterly exhausted in the days leading up to project submissions...</p>
+                <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+                    <img src="1.jpg" alt="First Image" style="width: 45%; height: auto; border: 2px solid white; border-radius: 10px;">
+                    <img src="2.jpg" alt="Second Image" style="width: 45%; height: auto; border: 2px solid white; border-radius: 10px;">
+                    <img src="3.png" alt="Second Image" style="width: 45%; height: auto; border: 2px solid white; border-radius: 10px;">
+                </div>
+            </bodycopy>
+        </div>
+    </div>
+</div>
+    <!-- 新增的页面 -->
+    <div id="R2815373547" page-url="new-page" class="page" style="--pin-padding-top: 0px; --pin-padding-bottom: 0px;">
+        <div class="backdrop">
+            <div class="backdrop-contents visible inside loaded" style="--backdrop-width: 1918px; --backdrop-height: 911px;">
+                <div class="gradient"></div>
+            </div>
+        </div>
+    
+        <a id="new-page"></a>
+        <div class="page-layout">
+            <div class="page-content">
+                <bodycopy style="--fit-height: 806.0528px; --resize-parent-width: 1813px;">
+                    <h1> </h1>
+                    <h2>Have you ever paid attention to your sleep quality, architecture students?</h2>
+                    <p> </p>
+                    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+                        <img src="4.png" alt="First Image" style="width: 45%; height: auto; border: 2px solid white; border-radius: 10px;">
+                    </div>
+                </bodycopy>
+            </div>
+        </div>
+    </div>
+        <!-- 新增的图表页面 -->
+        <div id="R2815373548-page1" page-url="chart-page-1" class="page" style="--pin-padding-top: 0px; --pin-padding-bottom: 0px;">
+            <div class="backdrop">
+                <div class="backdrop-contents visible inside loaded" style="--backdrop-width: 1918px; --backdrop-height: 911px;">
+                    <div class="gradient"></div>
+                </div>
+            </div>
+            
+            <a id="chart-page"></a>
+            <div class="page-layout">
+                <div class="page-content">
+                    <bodycopy style="--fit-height: 806.0528px; --resize-parent-width: 1813px;">
+                        <h1>Chart Page</h1>
+                        <h2> </h2>
+                        <div id="chart1"></div> <!-- 图表容器 -->
+                    </bodycopy>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="charts.js"></script> <!-- 引入图表的 JavaScript 文件 -->
+
+     <!-- 新增的页面 -->
+     <div div id="R2815373548-page2" page-url="chart-page-2" class="page" style="--pin-padding-top: 0px; --pin-padding-bottom: 0px;">
+        <div class="backdrop">
+            <div class="backdrop-contents visible inside loaded" style="--backdrop-width: 1918px; --backdrop-height: 911px;">
+                <div class="gradient"></div>
+            </div>
+        </div>
+        
+        <a id="chart-page"></a>
+        <div class="page-layout">
+            <div class="page-content">
+                <bodycopy style="--fit-height: 806.0528px; --resize-parent-width: 1813px;">
+                    <h1>Chart Page</h1>
+                    <h2> </h2>
+                    <div id="chart2"></div> <!-- 图表容器 -->
+                </bodycopy>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="charts2.js"></script>
+</body>
+</html>
